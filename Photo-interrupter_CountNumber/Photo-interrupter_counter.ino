@@ -28,11 +28,13 @@ void loop() {
 
 
 void objectDetection() {
+  //When it detects object, val goes HIGH to LOW 
   if (val == LOW) {
     count++ ; //counting number of detection
     tone(buzzer, 1000, 100);
     digitalWrite(RedLed, HIGH);
   }
+  //Stay LOW without detection
   else {
     digitalWrite(RedLed, LOW);
   }
