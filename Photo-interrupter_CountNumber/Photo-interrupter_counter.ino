@@ -13,7 +13,7 @@ void setup() {
   pinMode (buzzer, OUTPUT);
   pinMode (RedLed, OUTPUT);
   attachInterrupt(digitalPinToInterrupt(2), objectDetection, HIGH);
-  //fuction for creating exteranl interrupts at pin2 on Rising (LOW to HIGH)
+  //fuction for creating exteranl interrupts at pin2 on HIGH
 }
 
 void loop() {
